@@ -19,7 +19,9 @@
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "lastBuildDateTime": "",
-    "excludedFolders": [],
+    "excludedFolders": [
+      "test"
+    ],
     "excludedFiles": [
       "index.html"
     ],
