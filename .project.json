@@ -9,5 +9,125 @@
   "deploy": {
     "destination": "GWD",
     "name": "ZOPENCLOSEPO"
+  },
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild"
+  ],
+  "build": {
+    "buildRequired": true,
+    "sourceFolder": "webapp",
+    "targetFolder": "dist",
+    "lastBuildDateTime": "",
+    "excludedFolders": [],
+    "excludedFiles": [
+      "index.html"
+    ],
+    "availableFoldersComboBox": [
+      {
+        "text": "test"
+      },
+      {
+        "text": "localService"
+      },
+      {
+        "text": "localService/ZOPENPO2_SRV"
+      },
+      {
+        "text": "controller"
+      },
+      {
+        "text": "model"
+      },
+      {
+        "text": "i18n"
+      },
+      {
+        "text": "data"
+      },
+      {
+        "text": "view"
+      }
+    ],
+    "availableFilesComboBox": [
+      {
+        "text": "manifest.json"
+      },
+      {
+        "text": "test/Component-changes.json"
+      },
+      {
+        "text": "test/fakeLRep.json"
+      },
+      {
+        "text": "test/testFLPService.html"
+      },
+      {
+        "text": "test/testFLPServiceMockServer.html"
+      },
+      {
+        "text": "localService/zpodetailsSet.json"
+      },
+      {
+        "text": "localService/zopenpoSet.json"
+      },
+      {
+        "text": "localService/ZOPENPO2_SRV/metadata.xml"
+      },
+      {
+        "text": "localService/mockserver.js"
+      },
+      {
+        "text": "localService/metadata.xml"
+      },
+      {
+        "text": "controller/Popover1.js"
+      },
+      {
+        "text": "controller/utilities.js"
+      },
+      {
+        "text": "controller/Dialog1.js"
+      },
+      {
+        "text": "controller/Page1.controller.js"
+      },
+      {
+        "text": "controller/QuickView1.js"
+      },
+      {
+        "text": "model/errorHandling.js"
+      },
+      {
+        "text": "model/models.js"
+      },
+      {
+        "text": "i18n/i18n_en.properties"
+      },
+      {
+        "text": "i18n/i18n.properties"
+      },
+      {
+        "text": "Component.js"
+      },
+      {
+        "text": "index.html"
+      },
+      {
+        "text": "data/hierarchicalJSONData.json"
+      },
+      {
+        "text": "view/QuickView1.fragment.xml"
+      },
+      {
+        "text": "view/Page1.view.xml"
+      },
+      {
+        "text": "view/Dialog1.fragment.xml"
+      },
+      {
+        "text": "view/Popover1.fragment.xml"
+      }
+    ]
   }
 }
