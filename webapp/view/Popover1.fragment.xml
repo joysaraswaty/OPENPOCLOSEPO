@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.untitledPrototype.controller.Popover1"
+	xmlns="sap.m">
+	<ResponsivePopover contentHeight="250px" contentWidth="250px" horizontalScrolling="true" modal="false" offsetX="0" offsetY="0"
+		placement="Right" showHeader="true" title="More details" verticalScrolling="true" visible="true">
+		<content>
+			<ObjectAttribute title="Last delivery date"
+				text="{path: 'Budat', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" active="false" visible="true"/>
+			<Label text="..........................................." design="Standard" width="100%" required="false" textAlign="Begin"
+				textDirection="Inherit" visible="true"/>
+			<ObjectAttribute title="PO quantity" text="{path: 'Menge', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"
+				active="false" visible="true"/>
+			<ObjectAttribute title="Delivered quantity" text="{path: 'Wemng', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"
+				active="false" visible="true"/>
+			<ObjectAttribute title="Open quantity" text="{path: 'Openq', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"
+				active="false" visible="true"/>
+			<ObjectAttribute title="Unit of measure" text="{Meins}" active="false" visible="true"/>
+			<Label text="..........................................." design="Standard" width="100%" required="false" textAlign="Begin"
+				textDirection="Inherit" visible="true"/>
+			<ObjectAttribute title="PO value" text="{path: 'Sumlimit', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"
+				active="false" visible="true"/>
+			<ObjectAttribute title="Delivered value" text="{path: 'Actvalue', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"
+				active="false" visible="true"/>
+			<ObjectAttribute title="Open value" text="{path: 'Openv', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"
+				active="false" visible="true"/>
+			<ObjectAttribute title="Currency" text="{Waers}" active="false" visible="true"/>
+		</content>
+		<beginButton/>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</ResponsivePopover>
+</core:FragmentDefinition>

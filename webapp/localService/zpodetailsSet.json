@@ -1,0 +1,29 @@
+[{
+	"Ebeln": "4710000010",
+	"Ebelp": "10",
+	"Actvalue": 0,
+	"Budat": "/Date(1548979200000)/",
+	"Meins": "PC",
+	"Menge": 10,
+	"Openq": 2,
+	"Openv": 0,
+	"Sumlimit": 0,
+	"Waers": "",
+	"Wemng": 8,
+	"___FK_8c91994e8f6e11b211cd157c_00003": "",
+	"___FK_8c91994e8f6e11b211cd157c_000031": ""
+}, {
+	"Ebeln": "4710000020",
+	"Ebelp": "10",
+	"Actvalue": 800,
+	"Budat": "/Date(1549065600000)/",
+	"Meins": "AU",
+	"Menge": 1,
+	"Openq": 0,
+	"Openv": 200,
+	"Sumlimit": 1000,
+	"Waers": "EUR",
+	"Wemng": 0,
+	"___FK_8c91994e8f6e11b211cd157c_00003": "",
+	"___FK_8c91994e8f6e11b211cd157c_000031": ""
+}]

@@ -1,0 +1,205 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:variants="sap.ui.comp.variants" xmlns="sap.ui.table" 
+xmlns:filterbar="sap.ui.comp.filterbar" 
+xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.untitledPrototype.controller.Page1">
+	<f:DynamicPage  xmlns:m="sap.m" headerExpanded="true" showFooter="true" class="sapUiSizeCompact">
+		<f:title>
+			<f:DynamicPageTitle>
+				
+				<f:actions>
+					<m:ToolbarSpacer/>
+					
+						<m:Button icon = "sap-icon://clear-filter" press = "clearAllFilters" />
+				</f:actions>
+			</f:DynamicPageTitle>
+		</f:title>
+			
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+		<!--	<VBox fitContainer="true">-->
+				<!--<items>-->
+			
+					<Table id="po" width="100%" selectionMode="MultiToggle" rows="{initdata>/}" 
+					enableCellFilter="true" 
+					visibleRowCountMode="Fixed" rowHeight="45" updateFinished="_onFioriListReportTableUpdateFinished">
+				
+						
+						<columns>
+						
+						
+							<Column filterProperty="Ebeln" width= "auto">
+							     <m:Label text="PO Number" tooltip="Po Number"/>
+							<template>
+								<m:Text text="{parts:[{ path: 'initdata>Ebeln'}, { path: 'initdata>Ebelp' }]}" wrapping="true"/>
+								
+							</template>
+							</Column>
+							
+							<Column width= "auto">
+							     <m:Label text="Created on" tooltip="Po Number"/>
+							<template>
+								<m:Text text="{path: 'initdata>Aedat', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" wrapping="true"/>
+								
+							</template>
+							</Column>
+							
+							<Column filterProperty="Lifnr"  width= "10em">
+							     <m:Label text="Vendor" tooltip="Po Number"/>
+							<template>
+								<m:Text text="{parts:[{ path: 'initdata>Lifnr'}, { path: 'initdata>Name1' }]}" wrapping="true"/>
+							</template>
+							</Column>
+							
+						<Column filterProperty="Ernam"  width= "auto">
+							     <m:Label text="Created by" tooltip="Po Number"/>
+							<template>
+								<m:Text text="{parts:[{ path: 'initdata>Ernam'}, { path: 'initdata>NameTextc' }]}" wrapping="true"/>
+							</template>
+							</Column>
+							<Column filterProperty="Bukrs"  width= "auto">
+							     <m:Label text="Company code" tooltip="Po Number"/>
+							<template>
+								<m:Text text="{parts:[{ path: 'initdata>Bukrs'}, { path: 'initdata>Butxt' }]}" wrapping="true"/>
+							</template>
+							</Column>
+							<Column filterProperty="Ptext"  width= "auto">
+							     <m:Label text="PO Type" tooltip="Po Number"/>
+							<template>
+								<m:Text text="{initdata>Ptext}" wrapping="true"/>
+							</template>
+							</Column>
+							<Column   width= "auto">
+							     <m:Label text="Short Text" tooltip="Po Number"/>
+							<template>
+								<m:Text text="{initdata>Txz01}" wrapping="true"/>
+							</template>
+							</Column>
+								<Column  width= "6em">
+							     <m:Label text="Open Quantity" tooltip="Po Number"/>
+							<template>
+							<m:HBox>
+								<core:Icon src="sap-icon://status-critical" color="Critical"/>
+								<m:Text text="{path: 'initdata>Openq', type: 'sap.ui.model.type.Float', formatOptions:
+											{ maxFractionDigits: 2 }}" unit="{Meins}" state="Warning" 
+											emphasized="false" icon="sap-icon://status-critical" color="Critical" class="sapUiTinyMarginBegin" wrapping="true"/>
+											
+											
+								</m:HBox>		
+							</template>
+							
+							</Column>
+							<Column  width= "6em">
+							     <m:Label text="Open Value" tooltip="Po Number"/>
+							<template>
+								<m:HBox>
+									<core:Icon src="sap-icon://status-critical" color="Critical"/>
+								<m:Text text="{path: 'initdata>Openv', type: 'sap.ui.model.type.Float', 
+											formatOptions: { maxFractionDigits: 2 }}" unit="{Waers}" 
+											state="Warning" emphasized="false" class="sapUiTinyMarginBegin}" wrapping="true"/>
+									</m:HBox>		
+							</template>
+							</Column>
+							<Column width= "auto">
+							     <m:Label text="Details" tooltip="Po Number"/>
+							<template>
+								
+								<m:Link text="More" press="_onFioriListReportUrlColumnPress" wrapping="true"/>
+							</template>
+								</Column>
+						
+						
+							<!--</Column>
+							<Column width="auto" minScreenWidth="Phone">
+								<header>
+									<Text text="Created on" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Phone">
+								<header>
+									<Text text="Vendor (name)" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Phone">
+								<header>
+									<Text text="Created by (name)" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Phone">
+								<header>
+									<Text text="Company code (name)" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Phone">
+								<header>
+									<Text text="PO type" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Phone">
+								<header>
+									<Text text="Short text" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" hAlign="Right" minScreenWidth="Phone">
+								<header>
+									<Text text="Open Quantity" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" hAlign="Right" minScreenWidth="Phone">
+								<header>
+									<Text text="Open Value" width="auto"/>
+								</header>
+							</Column>
+							<Column width="auto" minScreenWidth="Phone">
+								<header>
+									<Text text="Details" width="auto"/>
+								</header>
+							</Column>-->
+						</columns>
+						<!--<items>
+							<ColumnListItem type="Active">
+								<cells>
+									<ObjectIdentifier title="{Ebeln}" text="{Ebelp}"/>
+									<ObjectStatus text="{path: 'Aedat', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" width="auto"/>
+									<ObjectIdentifier title="{Lifnr}" text="{Name1}"/>
+									<ObjectIdentifier title="{Ernam}" text="{NameTextc}"/>
+									<ObjectIdentifier title="{Bukrs}" text="{Butxt}"/>
+									<ObjectIdentifier title="{Ptext}" text=""/>
+									<ObjectStatus text="{Txz01}" width="auto"/>
+									<HBox alignItems="Stretch" justifyContent="End" alignContent="Stretch">
+										<items>
+											<core:Icon src="sap-icon://status-critical" color="Critical"/>
+											<ObjectNumber number="{path: 'Openq', type: 'sap.ui.model.type.Float', formatOptions:
+											{ maxFractionDigits: 2 }}" unit="{Meins}" state="Warning" emphasized="false" class="sapUiTinyMarginBegin"/>
+										</items>
+									</HBox>
+									<HBox alignItems="Stretch" justifyContent="End" alignContent="Stretch">
+										<items>
+											<core:Icon src="sap-icon://status-critical" color="Critical"/>
+											<ObjectNumber number="{path: 'Openv', type: 'sap.ui.model.type.Float', 
+											formatOptions: { maxFractionDigits: 2 }}" unit="{Waers}" 
+											state="Warning" emphasized="false" class="sapUiTinyMarginBegin"/>
+										</items>
+									</HBox>
+									<Link text="More" press="_onFioriListReportUrlColumnPress"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					<m:customData>
+					    <core:CustomData key="w5g.dt.editable" value="true" id="__data36"/>
+					</m:customData>-->
+					</Table>
+				<!--</items>-->
+		<!--	</VBox>-->
+		</f:content>
+		<f:footer>
+			<m:OverflowToolbar design="auto">
+				<m:content>
+					<m:ToolbarSpacer/>
+					<m:Button text="Close POs" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" press="closepo" iconDensityAware="false"/>
+				</m:content>
+			</m:OverflowToolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>

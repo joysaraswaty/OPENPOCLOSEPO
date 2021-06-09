@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.untitledPrototype.controller.QuickView1"
+	xmlns="sap.m">
+	<QuickView placement="Auto" width="320px">
+		<pages>
+			<QuickViewPage header="{path: 'Budat', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}"
+				title="{path: 'Menge', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" titleUrl="Last delivery date"
+				description="">
+				<groups>
+					<QuickViewGroup visible="true" heading="">
+						<elements>
+							<QuickViewGroupElement label="{path: 'Menge', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}"
+								value="{path: 'Wemng', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" type="email" emailSubject="" pageLinkId=""
+								url="" target="_blank" visible="true"/>
+							<QuickViewGroupElement label="Delivered quantity" value="" type="text" emailSubject="" pageLinkId="" url="" target="_blank" visible="true"/>
+						</elements>
+					</QuickViewGroup>
+				</groups>
+			</QuickViewPage>
+		</pages>
+	</QuickView>
+</core:FragmentDefinition>

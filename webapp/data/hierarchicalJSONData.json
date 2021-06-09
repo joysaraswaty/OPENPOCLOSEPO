@@ -1,0 +1,51 @@
+{
+	"static": {},
+	"combined": {
+		"zopenpoSet": [{
+			"Ebeln": "4710000010",
+			"Ebelp": "10",
+			"Menge": 10,
+			"Wemng": 2,
+			"Openq": 8,
+			"Meins": "PC",
+			"Openv": 0,
+			"Actvalue": 0,
+			"Sumlimit": 0,
+			"Waers": null
+		}, {
+			"Ebeln": "4710000020",
+			"Ebelp": "10",
+			"Menge": 1,
+			"Wemng": 0,
+			"Openq": 0,
+			"Meins": "AU",
+			"Openv": 200,
+			"Actvalue": 800,
+			"Sumlimit": 1000,
+			"Waers": "EUR"
+		}],
+		"zpodetailsSet": [{
+			"Ebeln": "4710000010",
+			"Ebelp": "10",
+			"Actvalue": 0,
+			"Meins": "PC",
+			"Menge": 10,
+			"Openq": 2,
+			"Openv": 0,
+			"Sumlimit": 0,
+			"Waers": null,
+			"Wemng": 8
+		}, {
+			"Ebeln": "4710000020",
+			"Ebelp": "10",
+			"Actvalue": 800,
+			"Meins": "AU",
+			"Menge": 1,
+			"Openq": 0,
+			"Openv": 200,
+			"Sumlimit": 1000,
+			"Waers": "EUR",
+			"Wemng": 0
+		}]
+	}
+}
